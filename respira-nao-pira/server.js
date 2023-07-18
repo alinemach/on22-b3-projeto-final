@@ -1,5 +1,8 @@
-const app = require("./src/app");
+const app = require("./src/app")
+const PORT = process.env.PORT || 3333
 
-const DB_PORT = process.env.DB_PORT;
+app.get("/", (req, res) => {
+    res.send({ message: "Boas-vindas ao RESPIRA NÃO PIRA"})
+})
 
-app.listen(DB_PORT, () => console.log(`Listening on port: ${DB_PORT}`));
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
