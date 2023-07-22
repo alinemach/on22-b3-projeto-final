@@ -6,18 +6,8 @@ const SECRET = process.env.SECRET;
 
 const findAllBreathingExercise = async (req, res) => {
     try {
-        const authHeader = req.get("authorization");
-        if (!authHeader) {
-            return res.status(401).send("Missing authorization information")
-        }
-        const token = authHeader.split(" ")[1];
-        jwt.verify(token, SECRET, async function (error) {
-            if (error) {
-                return res.status(403).send("Unauthorized access")
-            }
-            const allBreathingExercise = await breathingExerciseModel.find();
-            res.status(200).json(allBreathingExercise)
-        })
+        const allBreathingExercise = await breathingExerciseModel.find();
+        res.status(200).json(allBreathingExercise)
     } catch (error) {
         console.log(error)
         res.status(500).json({
