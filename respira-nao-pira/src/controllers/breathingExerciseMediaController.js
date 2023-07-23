@@ -5,18 +5,8 @@ const SECRET = process.env.SECRET;
 
 const findAllMedia = async (req, res) => {
     try {
-        const authHeader = req.get("authorization");
-        if (!authHeader) {
-            return res.status(401).send("Missing authorization information")
-        }
-        const token = authHeader.split(" ")[1];
-        jwt.verify(token, SECRET, async function (error) {
-            if (error) {
-                return res.status(403).send("Unauthorized access")
-            }
-            const allMedia = await breathingExerciseMediaModel.find();
-            res.status(200).json(allMedia)
-        })
+        const allMedia = await breathingExerciseMediaModel.find();
+        res.status(200).json(allMedia)
     } catch (error) {
         console.log(error)
         res.status(500).json({
@@ -27,19 +17,14 @@ const findAllMedia = async (req, res) => {
 
 const findMediaById = async (req, res) => {
     try {
-        const authHeader = req.get("authorization");
-        if (!authHeader) {
-            return res.status(401).send("Missing authorization information")
+        const findMedia = await
+        breathingExerciseMediaModel.findById(req.params.id);
+        if (findMedia == null) {
+            res.status(404).json({
+                message: "Game not found"
+            });
         }
-        const token = authHeader.split(" ")[1];
-        jwt.verify(token, SECRET, async function (error) {
-            if (error) {
-                return res.status(403).send("Unauthorized access")
-            }
-            const findMedia = await
-            breathingExerciseMediaModel.findById(req.params.id);
-            res.status(200).json(findMedia)
-        })
+        res.status(200).json(findMedia)
     } catch (error) {
         console.log(error)
         res.status(500).json({
