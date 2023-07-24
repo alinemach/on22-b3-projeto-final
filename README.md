@@ -42,61 +42,117 @@ Dessa forma, o usuário terá uma experiência completa e personalizada ao utili
 ## Documentação da API
 
 ├ 📁 on22-b3-projeto-final
+
 │ ├ 📁 assets
+
 │ │ ├ 📁 audios
+
 │ │ │   ├ 432-hz-meditation-157762.mp3
+
 │ │ │   ├ audio_d3e297ee42.mp3
+
 │ │ │   ├ cinematic-documentary-115669.mp3
+
 │ │ │   ├ meditation-background-music-for-vlog-video-43-sec-deep-thoughts-156359.mp3
+
 │ │ │   ├ meditative-rain-114484.mp3
+
 │ │ │   ├ one-warm-day-background-music-for-yoga-and-meditation-calming-rhythm-154349.mp3
+
 │ │ │   ├ relax-chill-out-music-for-landscapes-under-water-animals-forests-8105.mp3
+
 │ │ │   ├ relaxing-birds-and-piano-music-137153.mp3
+
 │ │ │   ├ relaxing-music-vol1-124477.mp3
+
 │ │ │   ├ soundtrack-reference-attribution.txt
+
 │ │ │   └ space-158081.mp3
+
 │ │ └ 📁 images
+
 │ ├ 📁 materials
+
 │ │ ├ 📁 backgrounds
+
 │ │ ├ diagrama .pdf
+
 │ │ ├ gifs
+
 │ │ └ prints-rotas
+
 │ │     ├ deleteBreathingExercise.png
+
 │ │     ├ deployedRoutes.png
+
 │ │     ├ getAllBreathingExercise.png
+
 │ │     ├ patchBreathingExercise.png
+
 │ │     ├ postBreathingExercise.png
+
 │ │     └ postLogin.png
+
 │ └ 📁 respira-nao-pira
+
 │     ├ 📁 node_modules
+
 │     ├ 📄package-lock.json
+
 │     ├ 📄package.json
+
 │     ├ 📄server.js
+
 │     ├ 📁 src
+
 │     │ ├ 📄app.js
+
 │     │ ├ 📁 controllers
+
 │     │ │   ├ 📄breathingExerciseController.js
+
 │     │ │   ├ 📄breathingExerciseMediaController.js
+
 │     │ │   ├ 📄mentalHeathAssistentController.js
+
 │     │ │   └ 📄symptomsController.js
+
 │     │ ├ 📁 database
+
 │     │ │   └ 📄dbConnect.js
+
 │     │ ├ 📁 models
+
 │     │ │   ├ 📄breathingExerciseMediaModel.js
+
 │     │ │   ├ 📄breathingExerciseModel.js
+
 │     │ │   ├ 📄mentalHeathAssistentModel.js
+
 │     │ │   └ 📄symptomsModel.js
+
 │     │ └ 📁 routes
+
 │     │     ├ 📄breathingExerciseMediaRoutes.js
+
 │     │     ├ 📄breathingExerciseRoutes.js
+
 │     │     ├ 📄mentalHealthAssistentRoutes.js
+
 │     │     └ 📄symptomsRoutes.js
+
 │     ├ 📁 swagger
+
 │     │ └ 📄swagger_output.json
+
 │     ├ 📄swagger.js
+
 │     └ 📁 tests
+
 │         ├ 📄breathingExercise.test.js
+
 │         ├ 📄breathingExerciseMedia.test.js
+
 │         └ 📄symptoms.test.js
 
 Para uma compreensão mais detalhada sobre as rotas e os parâmetros disponíveis na API, consulte o [diagrama](./materials/diagrama.pdf) fornecida.
