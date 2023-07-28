@@ -53,7 +53,6 @@ Dessa forma, o usuário terá uma experiência completa e personalizada ao utili
 | PATCH  | /:id | Atualiza uma técnica de respiração por ID |   S  |
 | DELETE | /:id | Remove uma técnica de respiração por ID   |   S  |
 
-
 - <em>Breathing Exercise Media</em> (mídias de técnicas de respiração)
   
 | Verbo  | Rota | Descrição                                          | Auth |
@@ -63,7 +62,6 @@ Dessa forma, o usuário terá uma experiência completa e personalizada ao utili
 | POST   | /add | Adiciona uma nova mídia de técnica de respiração   |   S  |
 | PATCH  | /:id | Atualiza uma mídia de técnica de respiração por ID |   S  |
 | DELETE | /:id | Remove uma mídia de técnica de respiração por ID   |   S  |
-
 
 - <em>Symptom</em> (sintoma)
   
@@ -84,9 +82,15 @@ Dessa forma, o usuário terá uma experiência completa e personalizada ao utili
 | POST   | /add | Adiciona um novo assistente de saúde mental   |   N  |
 | DELETE | /:id | Remove um assistente de saúde mental por ID   |   N  |
 
-Para uma compreensão mais detalhada sobre as rotas e os parâmetros disponíveis na API, consulte a [documentação](https://respira-nao-pira.onrender.com/minha-rota-de-documentacao/) fornecida. Tais rotas foram obtidas com o uso das ferramentas <em>Swagger</em> para documentar e <em>Render</em> para fazer o deploy das rotas.
+Para uma compreensão mais detalhada sobre as rotas e os parâmetros disponíveis na API, consulte a [documentação](https://respira-nao-pira.onrender.com/minha-rota-de-documentacao/) fornecida. Tais rotas foram obtidas com o uso das ferramentas <em>Swagger</em> para documentar e <em>[Render](https://respira-nao-pira.onrender.com/minha-rota-de-documentacao/)</em> para fazer o deploy das rotas.
 
 Vale salientar que as rotas de CRUD foram testadas com o auxílio do <em>jest</em>, construindo casos para retorno de cada elemento das schemas de <em>breathingExercise</em> (técnicas de respiração), <em>breathingExerciseMedia</em> (mídias de técnicas de respiração), <em>symptoms</em> (sintomas) bem como a alteração, exclusão e criação de objetos.
+
+## Diagramas
+
+<div style="text-align:center">
+  <img src="./materials/diagrama-classes.png" alt="Respira, não pira" />
+</div>
 
 ## Estrutura das pastas
 
@@ -154,4 +158,4 @@ Agradeço por escolher o **Respira, não pira**! Espero que esta API seja uma va
 
 Agradeço também à iniciativa da [**Reprograma**](https://reprograma.com.br/), uma entidade sem fins lucrativos cuja intenção é preencher a lacuna de gênero no setor de tecnologia por meio da educação.
 
-Aline Machado, **Respira, não pira**
+Aline Machado, **Respira, não pira!**
