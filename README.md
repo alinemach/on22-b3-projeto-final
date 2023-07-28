@@ -1,7 +1,7 @@
 # Respira, não pira - API de Exercícios de Respiração
 
 <div style="text-align:center">
-  <img src="./assets/images/logo-respira-nao-pira.png" alt="Respira, não pira" />
+  <img src="./assets/images/logo-respira-nao-pira1.png" alt="Respira, não pira" />
 </div>
 
 Bem-vindo(a) ao projeto **Respira, não pira**, uma API Node.js e MongoDB responsável por proporcionar uma experiência única e personalizada para os usuários, oferecendo técnicas/exercícios de respiração com base na emoção que o usuário informar. O objetivo é auxiliar na promoção da saúde mental e bem-estar, fornecendo recursos para lidar com diferentes sentimentos de forma positiva e equilibrada.
