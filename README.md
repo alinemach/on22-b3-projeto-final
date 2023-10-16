@@ -41,6 +41,19 @@ Dessa forma, o fluxo de interação com a API pode ser resumido da seguinte mane
 
 Dessa forma, o usuário terá uma experiência completa e personalizada ao utilizar a API **Respira, não pira**, com recursos para auxiliá-lo na prática de técnicas de respiração com base em suas emoções e com o apoio de um gif animado e uma mensagem motivadora.
 
+## Instalação
+
+```
+git clone https://github.com/alinemach/on22-b3-projeto-final.git
+cd on22-b3-projeto-final
+npm install
+```
+
+#### Execução
+
+```
+npm run start
+```
 ## Documentação da API
 
 - <em>Breathing Exercise</em> (técnicas de respiração)
@@ -85,6 +98,9 @@ Dessa forma, o usuário terá uma experiência completa e personalizada ao utili
 Para uma compreensão mais detalhada sobre as rotas e os parâmetros disponíveis na API, consulte a [documentação](https://respira-nao-pira.onrender.com/minha-rota-de-documentacao/) fornecida. Tais rotas foram obtidas com o uso das ferramentas <em>Swagger</em> para documentar e <em>[Render](https://respira-nao-pira.onrender.com/minha-rota-de-documentacao/)</em> para fazer o deploy das rotas.
 
 Vale salientar que as rotas de CRUD foram testadas com o auxílio do <em>jest</em>, construindo casos para retorno de cada elemento das schemas de <em>breathingExercise</em> (técnicas de respiração), <em>breathingExerciseMedia</em> (mídias de técnicas de respiração), <em>symptoms</em> (sintomas) bem como a alteração, exclusão e criação de objetos.
+
+## Rota de listagem de todos as técnicas
+![image](https://github.com/alinemach/on22-b3-projeto-final/blob/main/materials/prints-rotas/getAllBreathingExercise.png)
 
 ## Diagramas
 
@@ -159,3 +175,9 @@ Agradeço por escolher o **Respira, não pira**! Espero que esta API seja uma va
 Agradeço também à iniciativa da [**Reprograma**](https://reprograma.com.br/), uma entidade sem fins lucrativos cuja intenção é preencher a lacuna de gênero no setor de tecnologia por meio da educação.
 
 Aline Machado, **Respira, não pira!**
+
+<div align="center">
+
+<img src="https://github.com/alinemach/on22-b3-projeto-final/blob/main/materials/gifs/gif-respiracao.gif"  width="20%">
+
+</div>
